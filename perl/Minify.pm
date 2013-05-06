@@ -42,7 +42,7 @@ sub css_handler {
     close(INFILE);
 
     $r->send_http_header('text/css');
-    $r->print(CSS::Minifier::XS::minify(\$css));
+    $r->print(CSS::Minifier::XS::minify($css));
     return OK;
 }
 
@@ -58,7 +58,7 @@ sub js_handler {
     close(INFILE);
 
     $r->send_http_header('application/javascript');
-    $r->print(JavaScript::Minifier::XS::minify(\$js));
+    $r->print(JavaScript::Minifier::XS::minify($js));
     return OK;
 }
 
