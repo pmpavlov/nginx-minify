@@ -17,4 +17,5 @@ $ portmaster textproc/p5-CSS-Minifier-XS textproc/p5-JavaScript-Minifier-XS text
 
 TODO
 ===============
-* $content_type = "text/html" on fastcgi/proxy after compress
+* […] $content_type = "text/html" on fastcgi/proxy after compress
+* […] algorithm cache select path for static
