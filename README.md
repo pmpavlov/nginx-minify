@@ -5,12 +5,6 @@ Nginx Perl Minify [CSS / JS / HTML5]
 
 Depending on FreeBSD
 ===============
-* `/usr/ports/textproc/p5-CSS-Minifier-XS`
-* `/usr/ports/textproc/p5-JavaScript-Minifier-XS`
-* `/usr/ports/textproc/p5-HTML-Packer`
-
-Install
-===============
 FreeBSD
 ```bash
 $ portmaster textproc/p5-CSS-Minifier-XS textproc/p5-JavaScript-Minifier-XS textproc/p5-HTML-Packer
@@ -19,6 +13,12 @@ Ubuntu/Debian
 ```bash
 apt-get install libcss-minifier-xs-perl libjavascript-minifier-xs-perl libhtml-packer-perl
 ```
+
+Install
+===============
+nginx.conf -> /etc/nginx/nginx.conf
+mkdir /etc/nginx/perl
+Minify.pm -> /etc/nginx/perl/
 
 TODO
 ===============
