@@ -16,8 +16,8 @@ apt-get install libcss-minifier-xs-perl libjavascript-minifier-xs-perl libhtml-p
 
 Install
 ===============
-nginx.conf -> /etc/nginx/nginx.conf
-mkdir /etc/nginx/perl
+nginx.conf -> /etc/nginx/nginx.conf<br>
+mkdir /etc/nginx/perl<br>
 Minify.pm -> /etc/nginx/perl/
 
 TODO
