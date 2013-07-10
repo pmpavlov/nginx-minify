@@ -11,8 +11,13 @@ Depending on FreeBSD
 
 Install
 ===============
+FreeBSD
 ```bash
 $ portmaster textproc/p5-CSS-Minifier-XS textproc/p5-JavaScript-Minifier-XS textproc/p5-HTML-Packer
+```
+Ubuntu/Debian
+```bash
+apt-get install libcss-minifier-xs-perl libjavascript-minifier-xs-perl libhtml-packer-perl
 ```
 
 TODO
