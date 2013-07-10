@@ -5,13 +5,35 @@ Nginx Perl Minify [CSS / JS / HTML5]
 
 Depending on FreeBSD
 ===============
-FreeBSD
+**FreeBSD**
 ```bash
 $ portmaster textproc/p5-CSS-Minifier-XS textproc/p5-JavaScript-Minifier-XS textproc/p5-HTML-Packer
 ```
-Ubuntu/Debian
+**Ubuntu/Debian**
 ```bash
 apt-get install libcss-minifier-xs-perl libjavascript-minifier-xs-perl libhtml-packer-perl
+```
+
+**Manual**:
+* [p5-CSS-Minifier-XS](http://search.cpan.org/dist/CSS-Minifier-XS/lib/CSS/Minifier/XS.pm)
+* [p5-JavaScript-Minifier-XS](http://search.cpan.org/dist/JavaScript-Minifier-XS/lib/JavaScript/Minifier/XS.pm)
+* [p5-HTML-Packer](http://search.cpan.org/dist/HTML-Packer/lib/HTML/Packer.pm) ([in github](https://github.com/nevesenin/html-packer-perl))
+
+```bash
+wget http://search.cpan.org/CPAN/authors/id/G/GT/GTERMARS/CSS-Minifier-XS-0.08.tar.gz
+tar zxpfv CSS-Minifier-XS-0.08.tar.gz
+cd CSS-Minifier-XS-0.08
+perl Makefile.PL && make && make install
+
+wget http://search.cpan.org/CPAN/authors/id/G/GT/GTERMARS/JavaScript-Minifier-XS-0.09.tar.gz
+tar zxpfv JavaScript-Minifier-XS-0.09.tar.gz
+cd JavaScript-Minifier-XS-0.09
+perl Makefile.PL && make && make install
+
+wget http://search.cpan.org/CPAN/authors/id/N/NE/NEVESENIN/HTML-Packer-1.004001.tar.gz
+tar zxpfv HTML-Packer-1.004001.tar.gz
+cd HTML-Packer-1.004001
+perl Makefile.PL && make && make install
 ```
 
 Install
